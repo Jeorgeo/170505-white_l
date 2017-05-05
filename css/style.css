@@ -1,0 +1,338 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  /*font-family: 'Marck Script', cursive;*/
+}
+
+/*--------------------------first - for mobile--------------------------------*/
+/*-----------------------------index.html-------------------------------------*/
+
+body {
+  width: 100%;
+
+  font-size: 1em;
+  line-height: normal;
+  color: #7f7f7f;
+}
+
+.container {
+  max-width: 1360px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.cols.col-1,
+.cols.col-2,
+.cols.col-3,
+.cols.col-4,
+.cols.col-5,
+.cols.col-6,
+.cols.col-7,
+.cols.col-8,
+.cols.col-9,
+.cols.col-10,
+.cols.col-11,
+.cols.col-12 {
+  width: 100%;
+}
+
+
+@keyframes calling {
+  from {background-color: #0174b7;
+    border-color: #0174b7;
+    box-shadow: 1px 1px 2px 2px #015794;}
+  to {background-color: #00194c;
+    border-color: #00194c;
+    box-shadow: -1px -1px 2px 2px #00194c;}
+}
+
+
+@keyframes hover-a {
+  from { background-color: #f5f5f5;
+         color: #00194c;
+  }
+  to{ background-color: #00194c;
+      color: #f5f5f5; }
+}
+
+@keyframes hidden-slide {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes show-slide {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/*-------------------------------arrow-up------------------------------------*/
+
+.arrow-up {
+  position: fixed;
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  bottom: 50px;
+  right: 30px;
+  border: 1px solid #7f7f7f;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.arrow-up span {
+  font-size: 0;
+}
+
+.arrow-up span::before,
+.arrow-up span::after {
+  position: absolute;
+  display: block;
+  top: 20px;
+  width: 25px;
+  height: 2px;
+  background-color: #7f7f7f;
+  content: "";
+}
+
+.arrow-up span::before {
+  left: 3px;
+  transform: rotate(-45deg);
+}
+
+.arrow-up span::after {
+  right: 3px;
+  transform: rotate(45deg);
+}
+
+.arrow-up:hover {
+  cursor: pointer;
+}
+
+.arrow-up:hover {
+  background-color: #00194c;
+}
+
+.arrow-up:hover span::before,
+.arrow-up:hover span::after {
+  background-color: #ffffff;
+}
+
+
+/*----------------------Second - For Tablet 768px-----------------------------*/
+/*------------------------------index.html------------------------------------*/
+
+@media screen and (min-width: 768px) {
+
+}
+
+
+/*-------------------------Third - For Tablet 1024px--------------------------*/
+/*-------------------------------index.html-----------------------------------*/
+
+
+@media screen and (min-width: 1024px) {
+
+}
+
+
+/*-------------------------Third - For Tablet 1280px--------------------------*/
+/*-------------------------------index.html-----------------------------------*/
+
+
+@media screen and (min-width: 1280px) {
+
+}
+
+/*--------------------------------Modal-windows-------------------------------*/
+/*-------------------------------index.html-----------------------------------*/
+
+#wrap-b,
+#wrap-q {
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px;
+  background-color: rgba(1, 1, 1, 0.725);
+  z-index: 100;
+  overflow: auto;
+}
+
+.popup-question {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  margin: 50px auto;
+  padding: 1em;
+  width: 300px;
+  height: 310px;
+  color: #000000;
+  background: #fff;
+  z-index: 200;
+}
+
+.popup-question h5,
+.popup-bell h5  {
+  font-size: 1.2em;
+  margin: 0 0 0.5em 0;
+}
+
+.question-form-box {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.question-form-box input,
+.question-form-box textarea {
+  display: block;
+  width: 93%;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+.question-form-box textarea {
+  width: 94%;
+  height: 70px;
+}
+
+.question-form-box button {
+  float: right;
+  width: 40%;
+  margin-top: 0.2em;
+  padding: 0.3em 0.5em;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #0174b7;
+  border-color: #0174b7;
+  box-shadow: 1px 1px 2px 2px #015794;
+}
+
+
+.question-form-boxbutton:hover,
+.question-form-box button:hover {
+cursor: pointer;
+animation-name: calling;
+animation-duration: 0.3s;
+background-color: #00194c;
+border-color: #00194c;
+box-shadow: -1px -1px 2px 2px #00194c;
+}
+
+.popup-bell {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  margin: 50px auto;
+  padding: 1em;
+  width: 300px;
+  height: 365px;
+  color: #000000;
+  background: #fff;
+  z-index: 200;
+}
+
+.popup-question-close {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  display: none;
+  margin: 0;
+  padding: 0.2em 0.4em;
+  border-radius: 50%;
+  font-size: 1.2em;
+  background-color: #ffffff;
+}
+
+.popup-question-close:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.popup-bell h5 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.2em;
+}
+
+.bell-form-box {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bell-form-box input,
+.bell-form-box textarea {
+  display: block;
+  width: 93%;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+.bell-form-box label {
+  margin: 0.2em 0;
+}
+
+.bell-form-box textarea {
+  width: 94%;
+  height: 70px;
+}
+
+.bell-form-box button {
+  float: left;
+  width: 40%;
+  margin-top: 0.2em;
+  padding: 0.3em 0.5em;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #0174b7;
+  border-color: #0174b7;
+  box-shadow: 1px 1px 2px 2px #015794;
+}
+
+
+.bell-form-boxbutton:hover,
+.bell-form-box button:hover {
+cursor: pointer;
+animation-name: calling;
+animation-duration: 0.3s;
+background-color: #00194c;
+border-color: #00194c;
+box-shadow: -1px -1px 2px 2px #00194c;
+}
+
+.bell-form-box span {
+  float: left;
+  width: 50%;
+  margin-left: 5%;
+}
