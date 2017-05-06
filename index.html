@@ -18,20 +18,22 @@
     <header class="main-header">
       <div class="main-header-top">
         <div class="container">
-          <div class="header-top-title">
+          <div class="header-top-title cols col-4">
             <h2>Cоставление, продажа и доставка цветов, букетов по Казани</h2>
             <p>Время работы с 9 до 21</p>
           </div>
-          <div class="header-top-logo">
-            <img src="img/logo_full.png" width="600" height="240" alt="Лилия Белая">
+          <div class="header-top-logo cols col-4">
+            <a href="#">
+              <img src="img/logo_full.png" width="300" height="120" alt="Лилия Белая">
+            </a>
           </div>
-          <div class="header-top-contacts">
-            <a href="tel:+78432392774">+7 843 239-27-74</a>
-            <a href="tel:+79397366466">+7 939 736-64-66</a>
-            <div class="footer-contacts-social">
-              <a class="social-btn social-vk" href="#"><span>vk</span></a>
-              <a class="social-btn social-instagram" href="#"><span>instagram</span></a>
-              <a class="social-btn social-facebook" href="#"><span>facebook</span></a>
+          <div class="header-top-contacts cols col-4">
+            <a href="tel:+78432392774"><i class="fa fa-phone" aria-hidden="true"></i> <span>+7 843 239-27-74</span></a>
+            <a href="tel:+79397366466"><i class="fa fa-phone" aria-hidden="true"></i> <span>+7 939 736-64-66</span></a>
+            <div class="header-contacts-social">
+              <a class="social-btn social-vk" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+              <a class="social-btn social-instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a class="social-btn social-facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -40,16 +42,15 @@
         <h1>Доставка свежих букетов<br>цветов по Казани</h1>
         <p>При заказе от 1500 руб. доставка бесплатно + шоколадка в подарок!</p>
         <form class="form-header" action="index.html" method="post">
-          <input type="hidden" name="indicator" value="шоколадка">
+          <input  type="hidden" name="indicator" value="шоколадка">
           <label for="name"></label>
-          <input id="name" type="text" name="name" value="" placeholder="Введите имя">
+          <input id="name" class="cols col-3"  type="text" name="name" value="" placeholder="Введите имя">
           <label for="phone"></label>
-          <input type="text" name="phone" value="" placeholder="Номер телефона">
-          <input type="submit" name="send" value="Получить шоколадку">
+          <input id="phone" class="cols col-3" type="text" name="phone" value="" placeholder="Номер телефона">
+          <label for="send"><span></span></label>
+          <input class="form-header-btn cols col-5" id="send" type="submit" name="send" value="Получить шоколадку">
         </form>
       </div>
-
-
     </header>
     <main>
       <section class="main-offer">
@@ -58,45 +59,43 @@
           <article class="cols col-6 main-offer-box">
             <figure class="offer-box-img">
               <img src="catalog/01.jpg" width="250" height="250" alt="Большой букет из 51 розы">
-              <div class="offer-box-card">
-                <h5>Большой букет из 51 розы</h5>
-                <p>Выберите любой цвет</p>
-                <p>Бесплатная доставка!</p>
-                <p><span class="text-delivery">Бесплатная доставка!</span></p>
-                <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
-                <a class="order-button" href="#">Заказать</a>
-              </div>
             </figure>
+            <div class="offer-box-card">
+              <h5>Большой букет из 51 розы</h5>
+              <p>Выберите любой цвет</p>
+              <p><span class="text-delivery">Бесплатная доставка!</span></p>
+              <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+              <a class="order-button" href="#">Заказать</a>
+            </div>
           </article>
           <article class="cols col-6 main-offer-box">
             <figure class="offer-box-img">
-              <img src="catalog/01.jpg" width="250" height="250" alt="Шикарный букет из 101 розы">
-              <div class="offer-box-card">
-                <h5>Шикарный букет из 101 розы</h5>
-                <p>Выберите любой цвет</p>
-                <p>Бесплатная доставка!</p>
-                <p><span class="text-delivery">Бесплатная доставка!</span></p>
-                <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
-                <a class="order-button" href="#">Заказать</a>
-              </div>
+              <img src="catalog/01.jpg" width="250" height="250" alt="Шикарный букет из 101 розы">  
             </figure>
+            <div class="offer-box-card">
+              <h5>Шикарный букет из 101 розы</h5>
+              <p>Выберите любой цвет</p>
+              <p><span class="text-delivery">Бесплатная доставка!</span></p>
+              <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+              <a class="order-button" href="#">Заказать</a>
+            </div>
           </article>
         </div>
       </section>
       <section class="main-services">
         <h3>У нас вы можете купить</h3>
         <div class="container">
-          <a class="main-service" href="">
-            <img src="img/catalog-icon-1.png" width="100" height="100" alt="catalog-icon">
+          <a class="main-service cols col-4" href="">
+            <img src="img/catalog-icon-3.png" width="100" height="100" alt="catalog-icon">
             <h4>Букет из нашего каталога</h4>
             <p>Мы подобрали для вас самые популярные и красивые букеты</p>
           </a>
-          <a class="main-service" href="">
+          <a class="main-service cols col-4" href="">
             <img src="img/flowers-icon-1.png" width="100" height="100" alt="catalog-icon">
             <h4>Букет по вашим пожеланиям</h4>
             <p>Из каких цветов хотите букет? Мы сделаем его специально для вас</p>
           </a>
-          <a class="main-service" href="">
+          <a class="main-service cols col-4" href="">
             <img src="img/flowers-photo-icon-4.png" width="100" height="100" alt="catalog-icon">
             <h4>Букет по вашему фото</h4>
             <p>У вас есть фото букета, который вы хотите сделать? Просто пришлите его нам!</p>
@@ -106,24 +105,21 @@
       <section class="main-catalog">
         <h3>Каталог товаров:</h3>
         <div class="main-catalog-btn container">
-          <a class="cols col-2" href="#"><h4>Букеты из роз</h4></a>
-          <a class="cols col-2" href="#"><h4>Букеты ассорти</h4></a>
-          <a class="cols col-2" href="#"><h4>Мягкие игрушки</h4></a>
-          <a class="cols col-2" href="#"><h4>Свадебные букеты</h4></a>
-          <a class="cols col-2" href="#"><h4>Букеты в корзине и в коробке</h4></a>
-          <a class="cols col-2" href="#"><h4>Цветочно-сладкие подарки</h4></a>
+          <a class="cols col-2" href="#">Букеты из роз</a>
+          <a class="cols col-2" href="#">Букеты ассорти</a>
+          <a class="cols col-2" href="#">Мягкие игрушки</a>
+          <a class="cols col-2" href="#">Свадебные букеты</a>
+          <a class="cols col-2" href="#">Букеты в корзине и в коробке</a>
+          <a class="cols col-2" href="#">Цветочно-сладкие подарки</a>
         </div>
         <div class="main-catalog-roses container">
           <article class="cols col-6 main-catalog-cards">
             <div class="main-catalog-card">
-              <figure class="offer-box-img">
+              <figure class="catalog-box-img">
                 <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
               </figure>
-              <div class="offer-box-card">
+              <div class="catalog-box-card">
                 <h5>Большой букет из 51 розы</h5>
-                <p>Выберите любой цвет</p>
-                <p>Бесплатная доставка!</p>
-                <p><span class="text-delivery">Бесплатная доставка!</span></p>
                 <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
                 <a class="order-button" href="#">Заказать</a>
               </div>
@@ -131,14 +127,11 @@
           </article>
           <article class="cols col-6 main-catalog-cards">
             <div class="main-catalog-card">
-              <figure class="offer-box-img">
+              <figure class="catalog-box-img">
                 <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
               </figure>
-              <div class="offer-box-card">
+              <div class="catalog-box-card">
                 <h5>Большой букет из 51 розы</h5>
-                <p>Выберите любой цвет</p>
-                <p>Бесплатная доставка!</p>
-                <p><span class="text-delivery">Бесплатная доставка!</span></p>
                 <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
                 <a class="order-button" href="#">Заказать</a>
               </div>
@@ -146,14 +139,11 @@
           </article>
           <article class="cols col-6 main-catalog-cards">
             <div class="main-catalog-card">
-              <figure class="offer-box-img">
+              <figure class="catalog-box-img">
                 <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
               </figure>
-              <div class="offer-box-card">
+              <div class="catalog-box-card">
                 <h5>Большой букет из 51 розы</h5>
-                <p>Выберите любой цвет</p>
-                <p>Бесплатная доставка!</p>
-                <p><span class="text-delivery">Бесплатная доставка!</span></p>
                 <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
                 <a class="order-button" href="#">Заказать</a>
               </div>
@@ -161,14 +151,11 @@
           </article>
           <article class="cols col-6 main-catalog-cards">
             <div class="main-catalog-card">
-              <figure class="offer-box-img">
+              <figure class="catalog-box-img">
                 <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
               </figure>
-              <div class="offer-box-card">
+              <div class="catalog-box-card">
                 <h5>Большой букет из 51 розы</h5>
-                <p>Выберите любой цвет</p>
-                <p>Бесплатная доставка!</p>
-                <p><span class="text-delivery">Бесплатная доставка!</span></p>
                 <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
                 <a class="order-button" href="#">Заказать</a>
               </div>
@@ -176,14 +163,11 @@
           </article>
           <article class="cols col-6 main-catalog-cards">
             <div class="main-catalog-card">
-              <figure class="offer-box-img">
+              <figure class="catalog-box-img">
                 <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
               </figure>
-              <div class="offer-box-card">
+              <div class="catalog-box-card">
                 <h5>Большой букет из 51 розы</h5>
-                <p>Выберите любой цвет</p>
-                <p>Бесплатная доставка!</p>
-                <p><span class="text-delivery">Бесплатная доставка!</span></p>
                 <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
                 <a class="order-button" href="#">Заказать</a>
               </div>
@@ -192,29 +176,31 @@
         </div>
       </section>
       <section class="main-delivery">
-        <div class="main-delivery-box">
-          <h3>Доставка</h3>
-          <h4>Доставим букет за 120 минут</h4>
-          <p><span></span>Если вы не успеваете заехать к нам в магазин за букетом, ничего страшного! Наш курьер привезет букет вам и вы сами его вручите!</p>
-          <p><span></span>Если вы хотите сделать сюрприз, мы с радостью отвезем ваш букет по нужному адресу анонимно или с открыткой от вашего имени!</p>
-        </div>
-        <div class="main-pay-box">
-          <h4>Оплата</h4>
-          <p><span>Наличными</span></p>
-          <p><span></span>Банковской картой в магазине</p>
-          <p><span></span>Переводом на карту Сбербанка</p>
+        <div class="main-delivery-box container">
+          <div class="delivery-box-delivery ">
+            <h3>Доставка</h3>
+            <h4>Доставим букет за 120 минут</h4>
+            <p><span></span>Если вы не успеваете заехать к нам в магазин за букетом, ничего страшного! Наш курьер привезет букет вам и вы сами его вручите!</p>
+            <p><span></span>Если вы хотите сделать сюрприз, мы с радостью отвезем ваш букет по нужному адресу анонимно или с открыткой от вашего имени!</p>
+          </div>
+          <div class="delivery-box-pay">
+            <h4>Оплата</h4>
+            <div><span class="pay-cash"></span><p>Наличными</p></div>
+            <div><span class="pay-card"></span><p>Банковской картой в магазине</p></div>
+            <div><span class="pay-bank"></span><p>Переводом на карту Сбербанка</p></div>
+          </div>
         </div>
       </section>
       <section class="main-form">
         <h3>Хотите уникальный букет по пожеланиям или фото?</h3>
         <div class="container">
-          <div class="main-form-quest">
+          <div class="main-form-quest cols col-4">
             <p><span></span>Заполняете форму</p>
             <p><span></span>Мы звоним и уточняем детали</p>
             <p><span></span>Собираем цветы</p>
             <p><span></span>Создаем букет для вас!</p>
           </div>
-          <div class="main-form-form">
+          <div class="main-form-form cols col-8">
             <form class="" action="index.html" method="post">
               <input type="hidden" name="indicator" value="Уникальный букет">
               <label for="name">Имя:</label>
@@ -223,6 +209,7 @@
               <input type="text" name="phone" placeholder="Номер телефона">
               <textarea name="message" placeholder="Напишите свои пожелания"></textarea>
               <input type="submit" name="send" value="Сделать букет">
+              <span></span>
             </form>
           </div>
         </div>
@@ -230,17 +217,24 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer-map">
-        <iframe src="" width="1920" height="600"></iframe>
+        <iframe src="https://api-maps.yandex.ua/frame/v1/-/C6qfFEPj" width="1920" height="600" frameborder="0"></iframe>
       </div>
       <div class="main-footer-contacts">
-        <img src="img/logo_full.png" width="600" height="240" alt="Лилия Белая">
-        <p>г. Казань, улица Маршала Чуйкова, 85</p>
-        <p>+7 843-239-27-74+7 939 736-64-66</p>
-        <p>Время работы с 9 до 21</p>
+        <div class="footer-contacts-logo">
+          <img src="img/logo_full.png" width="300" height="120" alt="Лилия Белая">
+        </div>
+        <div class="footer-contacts-adress">
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i>   г. Казань, улица Маршала Чуйкова, 85</p>
+          <p>Ежедневно с 9:00 до 21:00</p>
+        </div>
+        <div class="footer-contacts-phone">
+          <a href="tel:+78432392774"><i class="fa fa-phone" aria-hidden="true"></i> <span>+7 843 239-27-74</span></a>
+          <a href="tel:+79397366466"><i class="fa fa-phone" aria-hidden="true"></i> <span>+7 939 736-64-66</span></a>
+        </div>
         <div class="footer-contacts-social">
-          <a class="social-btn social-vk" href="#"><span>vk</span></a>
-          <a class="social-btn social-instagram" href="#"><span>instagram</span></a>
-          <a class="social-btn social-facebook" href="#"><span>facebook</span></a>
+          <a class="social-btn social-vk" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+          <a class="social-btn social-instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a class="social-btn social-facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         </div>
       </div>
     </footer>
