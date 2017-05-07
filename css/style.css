@@ -65,14 +65,14 @@ h6 {
 
 /*--------------------------------animation-----------------------------------*/
 
-@keyframes calling {
+@keyframes hover-s {
   from {
-    background-color: #f3cbea;
     color: #b119d9;
+    background-color: #f3cbea;
   }
   to {
-    background-color: #b119d9;
     color: #ffffff;
+    background-color: #b119d9;
   }
 }
 
@@ -301,6 +301,8 @@ main {
 }
 
 .main-offer-box .order-button:hover {
+  animation-name: hover-s;
+  animation-duration: 0.5s;
   color: #ffffff;
   background-color: #b119d9;
 }
@@ -354,6 +356,8 @@ main {
 
 .main-catalog-btn label:hover {
   cursor: pointer;
+  animation-name: hover-s;
+  animation-duration: 0.5s;
   background-color: #b119d9;
   color: #ffffff;
 }
@@ -434,9 +438,9 @@ main {
   display: block;
   width: 100%;
   max-width: 300px;
-  min-height: 400px;
+  min-height: 420px;
   margin: 0 0 1em 0;
-  padding: 0.5em;
+  padding: 1em 0.5em;
   background-color: #ffffff;
   border: 1px dotted #b119d9;
   border-radius: 5px;
@@ -462,6 +466,9 @@ main {
 }
 
 .main-catalog-card a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: block;
   width: 100%;
   padding: 1em 0;
@@ -473,6 +480,8 @@ main {
 }
 
 .main-catalog-card a:hover {
+  animation-name: hover-s;
+  animation-duration: 0.5s;
   color: #ffffff;
   background-color: #b119d9;
 }
@@ -571,7 +580,8 @@ main {
 
 .main-form-form input,
 .main-form-form textarea,
-.main-form-form label {
+.main-form-form label,
+.main-form-form button {
   display: block;
   width: 100%;
   padding: 0.5em;
@@ -581,7 +591,8 @@ main {
 }
 
 .main-form-form input,
-.main-form-form textarea {
+.main-form-form textarea,
+.main-form-form button{
   margin: 0.5em 0;
   background-color: #ffffff;
   border: 1.5px dotted #b119d9;
@@ -597,22 +608,28 @@ main {
   position: absolute;
   width: 2em;
   height: 2em;
-  bottom: 1em;
-  left: 10px;
+  bottom: 0.6em;
+  left: 10%;
   background: url("../img/flowers-icon-2.png") no-repeat 0 0;
   background-size: contain;
 }
 
-.main-header-bottom input:focus,
-.main-header-bottom input:hover {
+.main-form-form input:focus,
+.main-form-form input:hover,
+.main-form-form button:hover {
   border: 1.5px solid #b119d9;
 }
 
-.main-header-bottom input:hover {
-  color: #ffffff;
+.main-form-form button {
+  color: #333333;
   background-color: #f3cbea;
 }
 
+.main-form-form button:hover,
+.main-header-bottom button:hover{
+  cursor: pointer;
+  color: #b119d9;
+}
 
 .main-footer {
   position: relative;
@@ -814,6 +831,10 @@ main {
     font-size: 1.1em;
   }
 
+  .header-top-contacts a {
+    margin: 0 0 0.5em 0;
+  }
+
   .main-header-bottom p {
     padding: 0.2em;
     border-radius: 5px
@@ -1001,7 +1022,7 @@ main {
   margin: 50px auto;
   padding: 1em;
   width: 300px;
-  height: 310px;
+  height: 350px;
   color: #000000;
   background: #fff;
   z-index: 200;
@@ -1035,7 +1056,8 @@ main {
   padding: 0;
 }
 
-.question-form-box input{
+.question-form-box input,
+.question-form-box textarea {
   display: block;
   width: 93%;
   margin: 0.5em 0;
@@ -1043,7 +1065,6 @@ main {
 }
 
 .question-form-box textarea {
-  width: 94%;
   height: 70px;
 }
 

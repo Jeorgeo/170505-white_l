@@ -2,11 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>цветы</title>
-    <meta name="keywords" content="">
-    <meta name="">
+    <title>Лилия Белая</title>
+    <meta name="keywords" content="Cоставление, продажа, доставка цветов, цветы, букеты, букеты в Казани, цветы в Казани, свадебные букеты">
+    <meta name="description" content="Cоставление букетов, продажа и доставка цветов по Казани">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="img/white_l.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
             <p>Время работы ежедневно с 9 до 21</p>
           </div>
           <div class="header-top-logo cols col-4">
-            <a href="#">
+            <a href="index.html">
               <img src="img/logo_full.png" width="300" height="120" alt="Лилия Белая">
             </a>
           </div>
@@ -41,8 +41,8 @@
       <div class="main-header-bottom container">
         <h1>Доставка свежих букетов<br>цветов по Казани</h1>
         <p>При заказе от 1500 руб. доставка бесплатно + шоколадка в подарок!</p>
-        <form class="form-header" action="index.html" method="post">
-          <input  type="hidden" name="indicator" value="шоколадка">
+        <form class="form-header" action="post.php" method="post">
+          <input  id="indicator" type="hidden" name="indicator" value="шоколадка">
           <label for="name"></label>
           <input id="name" class="cols col-3"  type="text" name="name" value="" placeholder="Введите имя">
           <label for="phone"></label>
@@ -56,7 +56,7 @@
       <section class="main-offer">
         <div class="container">
           <h3>Специальное предложение</h3>
-          <article class="cols col-6 main-offer-box">
+          <article class="wow fadeInUp cols col-6 main-offer-box">
             <figure class="offer-box-img">
               <img src="catalog/01.jpg" width="250" height="250" alt="Большой букет из 51 розы">
             </figure>
@@ -65,10 +65,10 @@
               <p>Выберите любой цвет</p>
               <p><span class="text-delivery">Бесплатная доставка!</span></p>
               <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
-              <a class="order-button" href="#">Заказать</a>
+              <a id="order-button" class="order-button" href="form.html" >Заказать</a>
             </div>
           </article>
-          <article class="cols col-6 main-offer-box">
+          <article class="wow fadeInUp cols col-6 main-offer-box">
             <figure class="offer-box-img">
               <img src="catalog/01.jpg" width="250" height="250" alt="Шикарный букет из 101 розы">
             </figure>
@@ -77,7 +77,7 @@
               <p>Выберите любой цвет</p>
               <p><span class="text-delivery">Бесплатная доставка!</span></p>
               <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
-              <a class="order-button" href="#">Заказать</a>
+              <a id="order-button" class="order-button" href="form.html">Заказать</a>
             </div>
           </article>
         </div>
@@ -85,17 +85,17 @@
       <section class="main-services">
         <h3>У нас вы можете купить</h3>
         <div class="container">
-          <a class="main-service cols col-4" href="">
+          <a class="wow fadeInUp main-service cols col-4" href="#catalog">
             <img src="img/catalog-icon-3.png" width="100" height="100" alt="catalog-icon">
             <h4>Букет из нашего каталога</h4>
             <p>Мы подобрали для вас самые популярные и красивые букеты</p>
           </a>
-          <a class="main-service cols col-4" href="">
+          <a class="wow fadeInUp main-service cols col-4" href="#form">
             <img src="img/flowers-icon-1.png" width="100" height="100" alt="catalog-icon">
             <h4>Букет по вашим пожеланиям</h4>
             <p>Из каких цветов хотите букет?<br> Мы сделаем его специально для вас</p>
           </a>
-          <a class="main-service cols col-4" href="">
+          <a class="wow fadeInUp main-service cols col-4" href="#form">
             <img src="img/flowers-photo-icon-4.png" width="100" height="100" alt="catalog-icon">
             <h4>Букет по вашему фото</h4>
             <p>У вас есть фото букета, который вы хотите сделать? <br>Просто пришлите его нам!</p>
@@ -103,76 +103,147 @@
         </div>
       </section>
       <section class="main-catalog">
+        <a name="catalog"></a>
         <h3>Каталог товаров:</h3>
+        <input class="slider-check" type="radio" id="btn-1" name="toggle" checked>
+        <input class="slider-check" type="radio" id="btn-2" name="toggle">
+        <input class="slider-check" type="radio" id="btn-3" name="toggle">
+        <input class="slider-check" type="radio" id="btn-4" name="toggle">
+        <input class="slider-check" type="radio" id="btn-5" name="toggle">
+        <input class="slider-check" type="radio" id="btn-6" name="toggle">
         <div class="main-catalog-btn container">
-          <a class="cols col-2" href="#">Букеты из роз</a>
-          <a class="cols col-2" href="#">Букеты ассорти</a>
-          <a class="cols col-2" href="#">Мягкие игрушки</a>
-          <a class="cols col-2" href="#">Свадебные букеты</a>
-          <a class="cols col-2" href="#">Букеты в корзине и в коробке</a>
-          <a class="cols col-2" href="#">Цветочно-сладкие подарки</a>
+          <label class="cols col-2" for="btn-1">Букеты из роз</label>
+          <label class="cols col-2" for="btn-2">Букеты ассорти</label>
+          <label class="cols col-2" for="btn-3">Мягкие игрушки</label>
+          <label class="cols col-2" for="btn-4">Свадебные букеты</label>
+          <label class="cols col-2" for="btn-5">Букеты в корзине и в коробке</label>
+          <label class="cols col-2" for="btn-6">Цветочно-сладкие подарки</label>
         </div>
-        <div class="main-catalog-roses container">
-          <article class="cols col-6 main-catalog-cards">
-            <div class="main-catalog-card">
-              <figure class="catalog-box-img">
-                <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
-              </figure>
-              <div class="catalog-box-card">
-                <h5>Большой букет из 51 розы</h5>
-                <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
-                <a class="order-button" href="#">Заказать</a>
+        <div class="main-catalog-slides container">
+          <div class="main-catalog-slide">
+            <article class="wow fadeInUp cols col-6 main-catalog-cards">
+              <div class="main-catalog-card">
+                <figure class="catalog-box-img">
+                  <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
+                </figure>
+                <div class="catalog-box-card">
+                  <h5>Большой букет из 51 розы</h5>
+                  <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+                  <a id="order-button" class="order-button" href="form.html">Заказать</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="cols col-6 main-catalog-cards">
-            <div class="main-catalog-card">
-              <figure class="catalog-box-img">
-                <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
-              </figure>
-              <div class="catalog-box-card">
-                <h5>Большой букет из 51 розы</h5>
-                <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
-                <a class="order-button" href="#">Заказать</a>
+            </article>
+            <article class="wow fadeInUp cols col-6 main-catalog-cards">
+              <div class="main-catalog-card">
+                <figure class="catalog-box-img">
+                  <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
+                </figure>
+                <div class="catalog-box-card">
+                  <h5>Большой букет из 51 розы</h5>
+                  <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+                  <a id="order-button" class="order-button" href="form.html">Заказать</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="cols col-6 main-catalog-cards">
-            <div class="main-catalog-card">
-              <figure class="catalog-box-img">
-                <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
-              </figure>
-              <div class="catalog-box-card">
-                <h5>Большой букет из 51 розы</h5>
-                <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
-                <a class="order-button" href="#">Заказать</a>
+            </article>
+            <article class="wow fadeInUp cols col-6 main-catalog-cards">
+              <div class="main-catalog-card">
+                <figure class="catalog-box-img">
+                  <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
+                </figure>
+                <div class="catalog-box-card">
+                  <h5>Большой букет из 51 розы</h5>
+                  <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+                  <a id="order-button" class="order-button" href="form.html">Заказать</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="cols col-6 main-catalog-cards">
-            <div class="main-catalog-card">
-              <figure class="catalog-box-img">
-                <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
-              </figure>
-              <div class="catalog-box-card">
-                <h5>Большой букет из 51 розы</h5>
-                <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
-                <a class="order-button" href="#">Заказать</a>
+            </article>
+            <article class="wow fadeInUp cols col-6 main-catalog-cards">
+              <div class="main-catalog-card">
+                <figure class="catalog-box-img">
+                  <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
+                </figure>
+                <div class="catalog-box-card">
+                  <h5>Большой букет из 51 розы</h5>
+                  <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+                  <a id="order-button" class="order-button" href="form.html">Заказать</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="cols col-6 main-catalog-cards">
-            <div class="main-catalog-card">
-              <figure class="catalog-box-img">
-                <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
-              </figure>
-              <div class="catalog-box-card">
-                <h5>Большой букет из 51 розы</h5>
-                <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
-                <a class="order-button" href="#">Заказать</a>
+            </article>
+            <article class="cols col-6 main-catalog-cards">
+              <div class="main-catalog-card">
+                <figure class="catalog-box-img">
+                  <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
+                </figure>
+                <div class="catalog-box-card">
+                  <h5>Большой букет из 51 розы</h5>
+                  <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+                  <a id="order-button" class="order-button" href="form.html">Заказать</a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
+          <div class="main-catalog-slide container">
+            <article class="cols col-6 main-catalog-cards">
+              <div class="main-catalog-card">
+                <figure class="catalog-box-img">
+                  <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
+                </figure>
+                <div class="catalog-box-card">
+                  <h5>Большой букет из 51 розы</h5>
+                  <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+                  <a id="order-button" class="order-button" href="form.html">Заказать</a>
+                </div>
+              </div>
+            </article>
+            <article class="cols col-6 main-catalog-cards">
+              <div class="main-catalog-card">
+                <figure class="catalog-box-img">
+                  <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
+                </figure>
+                <div class="catalog-box-card">
+                  <h5>Большой букет из 51 розы</h5>
+                  <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+                  <a id="order-button" class="order-button" href="form.html">Заказать</a>
+                </div>
+              </div>
+            </article>
+            <article class="cols col-6 main-catalog-cards">
+              <div class="main-catalog-card">
+                <figure class="catalog-box-img">
+                  <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
+                </figure>
+                <div class="catalog-box-card">
+                  <h5>Большой букет из 51 розы</h5>
+                  <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+                  <a id="order-button" class="order-button" href="form.html">Заказать</a>
+                </div>
+              </div>
+            </article>
+            <article class="cols col-6 main-catalog-cards">
+              <div class="main-catalog-card">
+                <figure class="catalog-box-img">
+                  <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
+                </figure>
+                <div class="catalog-box-card">
+                  <h5>Большой букет из 51 розы</h5>
+                  <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+                  <a id="order-button" class="order-button" href="form.html">Заказать</a>
+                </div>
+              </div>
+            </article>
+            <article class="cols col-6 main-catalog-cards">
+              <div class="main-catalog-card">
+                <figure class="catalog-box-img">
+                  <img src="catalog/01.jpg" width="200" height="200" alt="Большой букет из 51 розы">
+                </figure>
+                <div class="catalog-box-card">
+                  <h5>Большой букет из 51 розы</h5>
+                  <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+                  <a id="order-button" class="order-button" href="form.html">Заказать</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
       <section class="main-delivery">
@@ -192,6 +263,7 @@
         </div>
       </section>
       <section class="main-form">
+        <a name="form"></a>
         <h3>Хотите уникальный букет по пожеланиям или фото?</h3>
         <div class="container">
           <div class="main-form-quest cols col-4">
@@ -201,13 +273,13 @@
             <p><span></span>Создаем букет для вас!</p>
           </div>
           <div class="main-form-form cols col-8">
-            <form class="" action="index.html" method="post">
-              <input type="hidden" name="indicator" value="Уникальный букет">
+            <form class="" action="post.php" method="post">
+              <input id="indicator" type="hidden" name="indicator" value="Уникальный букет">
               <label for="name">Имя:</label>
               <input id="name" type="text" name="name" placeholder="Введите имя">
               <label for="phone">Телефон</label>
-              <input type="text" name="phone" placeholder="Номер телефона">
-              <textarea name="message" placeholder="Напишите свои пожелания"></textarea>
+              <input id="phone" type="text" name="phone" placeholder="Номер телефона">
+              <textarea id="message" name="message" placeholder="Напишите свои пожелания"></textarea>
               <input type="submit" name="send" value="Сделать букет">
               <span></span>
             </form>
@@ -238,13 +310,15 @@
         </div>
       </div>
     </footer>
-    <a class="arrow-up" href="#">
-      <span>arrow-up</span>
-    </a>
+    <div id="toTop">
+      <a class="arrow-up" href="#">
+        <span>arrow-up</span>
+      </a>
+    </div>
 
 <!--  Модальное окно формы      !-->
 
-<div onclick="show('none')" id="wrap"></div>
+<div class="wrap"></div>
 
 <div id="window" class="popup-question">
   <div class="popup-question-close">
@@ -253,35 +327,22 @@
   <h5>Ваша заявка</h5>
   <p>Пожалуйста, заполните все поля. Мы свяжемся с вами в ближайшее время</p>
   <form class="question-form-box clearfix" action="" method="post" >
-    <input id="order" type="hidden" name="indicator" value="Заказ">
+    <input id="indicator" type="hidden" name="indicator" value="Заказ">
     <label for="name"></label>
-    <input id="name" type="text" name="name" placeholder="Как к вам обращаться" required>
+    <input id="name" type="text" name="name" placeholder="Как к вам обращаться*" required>
     <label for="mail"></label>
-    <input id="mail" type="text" name="mail" placeholder="Ваш телефон" required>
+    <input id="mail" type="text" name="mail" placeholder="Ваш телефон*" required>
     <label for="message"></label>
-    <textarea id="message" name="message"  required>
+    <textarea id="message" name="message"  value="Ваши пожелания, уточнения">
     </textarea>
-    <button class="form-message-btn" type="submit"  name="send" value="отправить">отправить</button>
     <span>* - Обязательно для заполнения</span>
+    <button class="form-message-btn" type="submit"  name="send" value="отправить">отправить</button>
   </form>
 </div>
 
-    <script type="text/javascript">
-
-        //Функция показа
-    function show(state){
-        document.getElementById('window').style.display = state;
-        document.getElementById('wrap').style.display = state;
-    };
-
-    </script>
-    <script src="js/jquery/jquery-1.11.2.min.js"></script>
-	  <script src="js/wow.min.js"></script>
-
-	  <script>
-	   new WOW().init();
-   </script>!
-    <!--<script src="js/slider.js"></script>!-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>
