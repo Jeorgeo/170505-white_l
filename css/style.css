@@ -169,16 +169,23 @@ h6 {
   border-radius: 20%;
 }
 
+.header-contacts-social .social-btn:hover,
 .footer-contacts-social .social-btn:hover {
   color: #b119d9;
   box-shadow: 1px 1px 3px 1px #b119d9;
 }
 
-.main-header-bottom form {
-  position: relative;
+.main-header-bottom p {
+  font-size: 2em;
 }
 
-.main-header-bottom input {
+.main-header-bottom .form-header-btn {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.main-header-bottom input,
+.main-header-bottom button {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 1em;
@@ -195,8 +202,8 @@ h6 {
   position: absolute;
   width: 1.8em;
   height: 1.8em;
-  bottom: 1.6em;
-  left: 10px;
+  bottom: 0.2em;
+  left: 12%;
   background: url("../img/chocolate-icon-3.png") no-repeat 0 0;
   background-size: contain;
 }
@@ -204,9 +211,11 @@ h6 {
 .main-header-bottom input:focus,
 .main-header-bottom input:hover {
   border: 1.5px solid #b119d9;
+  background-color: #f3cbea;
 }
 
-.main-header-bottom input:hover {
+.main-header-bottom button:hover {
+  cursor: pointer;
   color: #ffffff;
   background-color: #f3cbea;
 }
@@ -287,6 +296,11 @@ main {
   background-color: #b119d9;
 }
 
+.main-services p {
+  font-size: 1.1em;
+  margin: 0.5em;
+}
+
 .main-services .main-service {
   display: inline-block;
   vertical-align: top;
@@ -294,6 +308,10 @@ main {
   margin-bottom: 1em;
   text-decoration: none;
   color: #333333;
+}
+
+.main-services a:hover p {
+  color: #b119d9;
 }
 
 .main-catalog-btn {
@@ -526,7 +544,7 @@ main {
 .main-footer-map iframe {
   display: block;
   max-width: 100%;
-  height: auto;
+  min-height: 100px;
 }
 
 .main-footer-contacts {
@@ -720,18 +738,14 @@ main {
   }
 
   .main-header-bottom p {
-    color: #000000;
     padding: 0.2em;
-    border-radius: 5px;
+    border-radius: 5px
+    color: #ffffff;
     background-color: rgba(243, 203, 234, 0.5);
   }
 
   .form-header input {
     background-color: rgba(255, 255, 255, 0.8);
-  }
-
-  .main-header-bottom span {
-    left: 57%;
   }
 
   .main-offer-box {
@@ -756,6 +770,7 @@ main {
   }
 
   .main-footer-map {
+    position: relative;
     background: #299e36 url("../img/map.jpg") no-repeat 50% 0;
     background-size: cover;
     min-height: 450px;
@@ -794,11 +809,6 @@ main {
     max-width: 150px;
     height: auto;
   }
-
-
-
-
-
 }
 
 
