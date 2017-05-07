@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>цветы</title>
+    <meta name="keywords" content="">
+    <meta name="">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="fonts/fontawesome-webfont.svg" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Marck+Script" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header-top">
+        <div class="container">
+          <div class="header-top-title cols col-4">
+            <h2>Cоставление, продажа и доставка цветов, букетов по Казани</h2>
+            <p>Время работы ежедневно с 9 до 21</p>
+          </div>
+          <div class="header-top-logo cols col-4">
+            <a href="index.html">
+              <img src="img/logo_full.png" width="300" height="120" alt="Лилия Белая">
+            </a>
+          </div>
+          <div class="header-top-contacts cols col-4">
+            <a href="tel:+78432392774"><i class="fa fa-phone" aria-hidden="true"></i> <span>+7 843 239-27-74</span></a>
+            <a href="tel:+79397366466"><i class="fa fa-phone" aria-hidden="true"></i> <span>+7 939 736-64-66</span></a>
+            <div class="header-contacts-social">
+              <a class="social-btn social-vk" href="https://vk.com/liliya_6ela9" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+              <a class="social-btn social-instagram" href="https://www.instagram.com/liliya.white.kazan" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a class="social-btn social-facebook" href="https://www.facebook.com/aleksandr.famaliya" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-header-bottom container">
+        <h1>Доставка свежих букетов<br>цветов по Казани</h1>
+        <p>При заказе от 1500 руб. доставка бесплатно + шоколадка в подарок!</p>
+        <form class="form-header" action="post.php" method="post">
+          <input id="indicator" type="hidden" name="indicator" value="заказ">
+          <label for="name"></label>
+          <input id="name" class="cols col-3"  type="text" name="name" value="" placeholder="Введите имя">
+          <label for="phone"></label>
+          <input id="phone" class="cols col-3" type="text" name="phone" value="" placeholder="Номер телефона">
+          <label for="send"></label>
+          <button class="form-header-btn cols col-5" id="send" type="submit" name="send"><span></span>Получить шоколадку</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div id="window" class="form-question">
+        <div class="popup-question-close">
+          X
+        </div>
+        <h5>Ваша заявка</h5>
+        <p>Пожалуйста, заполните все поля. Мы свяжемся с вами в ближайшее время</p>
+        <form class="question-form-box clearfix" action="" method="post" >
+          <input id="indicator" type="hidden" name="indicator" value="Заказ">
+          <label for="name"></label>
+          <input id="name" type="text" name="name" placeholder="Как к вам обращаться" required>
+          <label for="phone"></label>
+          <input id="phone" type="text" name="phone" placeholder="Ваш телефон" required>
+          <span>* - Обязательно для заполнения</span>
+          <button class="form-message-btn" type="submit"  name="send" value="отправить">отправить</button>
+        </form>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer-map">
+        <iframe src="https://api-maps.yandex.ua/frame/v1/-/C6qvu8ol" width="1920" height="600" frameborder="0"></iframe>
+      </div>
+      <div class="main-footer-contacts">
+        <div class="footer-contacts-logo">
+          <img src="img/logo_full.png" width="300" height="120" alt="Лилия Белая">
+        </div>
+        <div class="footer-contacts-adress">
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i>   г. Казань, улица Маршала Чуйкова, 85</p>
+          <p>Ежедневно с 9:00 до 21:00</p>
+        </div>
+        <div class="footer-contacts-phone">
+          <a href="tel:+78432392774"><i class="fa fa-phone" aria-hidden="true"></i> <span>+7 843 239-27-74</span></a>
+          <a href="tel:+79397366466"><i class="fa fa-phone" aria-hidden="true"></i> <span>+7 939 736-64-66</span></a>
+        </div>
+        <div class="footer-contacts-social">
+          <a class="social-btn social-vk" href="https://vk.com/liliya_6ela9" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+          <a class="social-btn social-instagram" href="https://www.instagram.com/liliya.white.kazan" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a class="social-btn social-facebook" href="https://www.facebook.com/aleksandr.famaliya" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+    <div id="toTop">
+      <a class="arrow-up" href="#">
+        <span>arrow-up</span>
+      </a>
+    </div>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
