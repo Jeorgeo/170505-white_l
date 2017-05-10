@@ -24,7 +24,7 @@
           </div>
           <div class="header-top-logo cols col-4">
             <a href="index.html">
-              <img src="img/logo_full.png" width="300" height="120" alt="Лилия Белая">
+              <img src="img/logo.png" width="300" height="120" alt="Лилия Белая">
             </a>
           </div>
           <div class="header-top-contacts cols col-4">
@@ -44,9 +44,9 @@
         <form class="form-header" action="post.php" method="post">
           <input  id="indicator" type="hidden" name="indicator" value="шоколадка">
           <label for="name"></label>
-          <input id="name" class="cols col-3"  type="text" name="name" value="" placeholder="Введите имя">
+          <input id="name" class="cols col-3"  type="text" name="name" value="" placeholder="Ваше имя">
           <label for="phone"></label>
-          <input id="phone" class="cols col-3" type="text" name="phone" value="" placeholder="Номер телефона">
+          <input id="phone" class="cols col-3" type="text" name="phone" value="" placeholder="Ваш номер телефона">
           <label for="send"></label>
           <button class="form-header-btn cols col-5" id="send" type="submit" name="send"><span></span>Получить шоколадку</button>
         </form>
@@ -64,7 +64,7 @@
               <h5>Большой букет из 51 розы</h5>
               <p>Выберите любой цвет</p>
               <p><span class="text-delivery">Бесплатная доставка!</span></p>
-              <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+              <p><span class="text-sale">5 100 руб</span><span class="text-price">3 825 руб</span></p>
               <a id="order-button" class="order-button" href="form.html" >Заказать</a>
             </div>
           </article>
@@ -76,7 +76,7 @@
               <h5>Шикарный букет из 101 розы</h5>
               <p>Выберите любой цвет</p>
               <p><span class="text-delivery">Бесплатная доставка!</span></p>
-              <p><span class="text-sale">5 100 руб</span><span class="text-price">5 100 руб</span></p>
+              <p><span class="text-sale">10 100  руб</span><span class="text-price">7 070 руб</span></p>
               <a id="order-button" class="order-button" href="form.html">Заказать</a>
             </div>
           </article>
@@ -1375,10 +1375,10 @@
           <div class="main-form-form cols col-8">
             <form class="" action="post.php" method="post">
               <input id="indicator" type="hidden" name="indicator" value="Уникальный букет">
-              <label for="name">Имя:</label>
-              <input id="name" type="text" name="name" placeholder="Введите имя">
-              <label for="phone">Телефон</label>
-              <input id="phone" type="text" name="phone" placeholder="Номер телефона">
+              <label for="name"></label>
+              <input id="name" type="text" name="name" placeholder="Ваше имя">
+              <label for="phone"></label>
+              <input id="phone" type="text" name="phone" placeholder="Ваш номер телефона">
               <textarea id="message" name="message" placeholder="Напишите свои пожелания"></textarea>
               <button type="submit" name="send"><span></span>Сделать букет</button>
             </form>
@@ -1392,7 +1392,7 @@
       </div>
       <div class="main-footer-contacts">
         <div class="footer-contacts-logo">
-          <img src="img/logo_full.png" width="300" height="120" alt="Лилия Белая">
+          <img src="img/logo.png" width="300" height="120" alt="Лилия Белая">
         </div>
         <div class="footer-contacts-adress">
           <p><i class="fa fa-map-marker" aria-hidden="true"></i>   г. Казань, улица Маршала Чуйкова, 85</p>
@@ -1425,12 +1425,12 @@
   </div>
   <h5>Ваша заявка</h5>
   <p>Пожалуйста, заполните все поля. Мы свяжемся с вами в ближайшее время</p>
-  <form class="question-form-box clearfix" action="" method="post" >
+  <form class="question-form-box clearfix" action="post.php" method="post" >
     <input id="indicator" type="hidden" name="indicator" value="Заказ">
     <label for="name"></label>
     <input id="name" type="text" name="name" placeholder="Как к вам обращаться*" required>
-    <label for="mail"></label>
-    <input id="mail" type="text" name="mail" placeholder="Ваш телефон*" required>
+    <label for="phone"></label>
+    <input id="phone" type="text" name="phone" placeholder="Ваш телефон*" required>
     <label for="message"></label>
     <textarea id="message" name="message"  value="Ваши пожелания, уточнения">
     </textarea>
@@ -1442,6 +1442,7 @@
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+    <script crossorigin="anonymous" async type="text/javascript" src="//api.pozvonim.com/widget/callback/v3/cd406f83832c84a9900f1d9362906e61/connect" id="check-code-pozvonim" charset="UTF-8"></script>
 
   </body>
 </html>

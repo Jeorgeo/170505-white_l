@@ -3,14 +3,14 @@
 
 header("Content-Type: text/html; charset=utf-8");
 
-$adminemail="";  // e-mail админа
+$adminemail="Zakazcveti@bk.ru";  // e-mail админа
 
 
 $date=date("d.m.y"); // число.месяц.год
 
 $time=date("H:i"); // часы:минуты:секунды
 
-$backurl="https://лилиябелая.рф";  // На какую страничку переходит после отправки письма
+$backurl="http://лилиябелая.рф";  // На какую страничку переходит после отправки письма
 
 //---------------------------------------------------------------------- //
 
@@ -24,7 +24,7 @@ $name=$_POST['name'];
 
 $phone=$_POST['phone'];
 
-$msg=$_POST['message'];
+$message=$_POST['message'];
 
 
 
@@ -37,10 +37,20 @@ $msg="
 
 Имя: $name
 
-E-mail: $email
+Телефон : $phone
 
-сообщение: $msg
+Сообщение: $message
 
+
+";
+
+$msg1="
+
+Ваше Имя: $name
+
+Ваш телефон : $phone
+
+Ваши пожелания, уточнения: $message
 
 ";
 
@@ -69,10 +79,10 @@ fclose($f);
 // Выводим сообщение пользователю
 
 print "<script language='Javascript'><!--
-function reload() {location = \"$backurl\"}; setTimeout('reload()', 500);
+function reload() {location = \"$backurl\"}; setTimeout('reload()', 1000);
 //--></script>
 
-$msg
+$msg1
 
 <p>Ваш заказ принят! Подождите, сейчас вы будете перенаправлены на главную страницу...</p>";
 exit;
