@@ -20,6 +20,8 @@ $backurl="http://лилиябелая.рф";  // На какую странич�
 
 $indicator=$_POST['indicator'];
 
+$price=$_POST['indicator-name'];
+
 $name=$_POST['name'];
 
 $phone=$_POST['phone'];
@@ -35,6 +37,8 @@ $msg="
 
 Откуда заказ: $indicator
 
+Описание: $price
+
 Имя: $name
 
 Телефон : $phone
@@ -45,6 +49,7 @@ $msg="
 ";
 
 $msg1="
+Ваш заказ: $price
 
 Ваше Имя: $name
 

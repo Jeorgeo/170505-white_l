@@ -5,7 +5,6 @@ body {
   padding: 0;
   font-family: 'Lora', serif;
   z-index: 1;
-  /*font-family: 'Marck Script', cursive;*/
 }
 
 /*--------------------------first - for mobile--------------------------------*/
@@ -36,7 +35,6 @@ h3,
 h4,
 h5,
 h6 {
-  /*font-family: 'Marck Script', cursive;*/
   text-transform: uppercase;
   font-size: 1.4em;
   color: #000000;
@@ -260,6 +258,7 @@ main {
   vertical-align: top;
   width: 100%;
   max-width: 520px;
+  min-height: 480px;
   margin: 0 0 1em 0;
   padding: 0.5em;
   background-color: #ffffff;
@@ -271,6 +270,10 @@ main {
 .main-offer-box figure {
   margin: 0;
   padding: 0;
+}
+
+.main-offer-box .text-title {
+  display: none;
 }
 
 .main-offer-box .text-delivery {
@@ -458,6 +461,10 @@ main {
 
 .main-catalog-card p {
   font-size: 1.2em;
+}
+
+.main-catalog-card .text-title {
+  display: none;
 }
 
 .main-catalog-card .text-sale {
@@ -740,6 +747,163 @@ main {
   background-color: #ffffff;
 }
 
+/*--------------------------------Modal-windows-------------------------------*/
+/*-------------------------------index.html-----------------------------------*/
+
+.wrap {
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px;
+  background-color: rgba(1, 1, 1, 0.725);
+  z-index: 100;
+  overflow: auto;
+}
+
+.popup-question {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  margin: 5px auto;
+  padding: 1em;
+  width: 300px;
+  height: 500px;
+  color: #000000;
+  background: #fff;
+  z-index: 200;
+}
+
+.modal-content-show {
+  display: block;
+}
+
+.main-catalog-order {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  max-width: 300px;
+  min-height: 150px;
+  margin: 0 1% 1em 0;
+  padding: 0.1em;
+  background-color: #ffffff;
+  border: 1px dotted #b119d9;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.main-catalog-order .text-title {
+  display: block;
+}
+
+.main-catalog-order img {
+  display: none;
+}
+
+.main-catalog-order h5 {
+  display: inline-block;
+  font-size: 0.5em;
+}
+
+.main-catalog-order p {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin: 0.1em;
+}
+
+.main-catalog-order .text-sale {
+  text-decoration: line-through;
+}
+
+.form-question {
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  padding: 1em;
+  width: 300px;
+  height: 310px;
+  color: #000000;
+  background: #fff;
+  z-index: 200;
+}
+
+.popup-question h5 {
+  font-size: 1.2em;
+  margin: 0 0 0.5em 0;
+}
+
+.question-form-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.question-form-box input,
+.question-form-box textarea {
+  display: block;
+  width: 93%;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+.question-form-box textarea {
+  height: 30px;
+}
+
+.question-form-box button {
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  padding: 0.3em 0.5em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #b119d9;
+  background-color: #f3cbea;
+  border: 1px dotted #b119d9;;
+  border-radius: 5px;
+}
+
+
+.question-form-box button:hover {
+cursor: pointer;
+animation-name: calling;
+animation-duration: 0.3s;
+color: #ffffff;
+background-color: #b119d9;
+}
+
+.popup-question-close {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  display: block;
+  margin: 0;
+  padding: 0.2em 0.4em;
+  border-radius: 50%;
+  font-size: 1.2em;
+  background-color: #ffffff;
+}
+
+.popup-question-close:hover {
+  cursor: pointer;
+  color: #b119d9;
+}
+
+.popup-bell h5 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.2em;
+}
+
 
 /*----------------------Second - For Tablet 768px-----------------------------*/
 /*------------------------------index.html------------------------------------*/
@@ -847,7 +1011,7 @@ main {
   }
 
   .main-offer-box {
-    min-height: 600px;
+    min-height: 550px;
   }
 
   .main-offer-box:nth-child(2) {
@@ -906,6 +1070,34 @@ main {
     display: block;
     max-width: 150px;
     height: auto;
+  }
+
+  .popup-question {
+    width: 640px;
+    height: 420px;
+    margin-top: 50px;
+  }
+
+  .question-form-box {
+    width: 42%;
+  }
+
+  .question-form-box textarea {
+    height: 130px;
+  }
+
+  .main-catalog-order {
+    width: 55%;
+    margin-right: 30px;
+  }
+
+  .main-catalog-order img {
+    display: block;
+    max-width: 90%;
+  }
+
+  .main-catalog-order p {
+    width: 100%;
   }
 }
 
@@ -993,121 +1185,14 @@ main {
   .main-delivery {
     background-position: 50% 40%;
   }
-}
 
-/*--------------------------------Modal-windows-------------------------------*/
-/*-------------------------------index.html-----------------------------------*/
+  .main-catalog-order .offer-box-img,
+  .main-catalog-order .offer-box-card {
+    width: 100%;
+  }
 
-.wrap {
-  display: none;
-  opacity: 0.8;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  padding: 16px;
-  background-color: rgba(1, 1, 1, 0.725);
-  z-index: 100;
-  overflow: auto;
-}
-
-.popup-question {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: none;
-  margin: 50px auto;
-  padding: 1em;
-  width: 300px;
-  height: 350px;
-  color: #000000;
-  background: #fff;
-  z-index: 200;
-}
-
-.modal-content-show {
-  display: block;
-}
-
-.form-question {
-  position: relative;
-  display: block;
-  margin: 10px auto;
-  padding: 1em;
-  width: 300px;
-  height: 310px;
-  color: #000000;
-  background: #fff;
-  z-index: 200;
-}
-
-.popup-question h5 {
-  font-size: 1.2em;
-  margin: 0 0 0.5em 0;
-}
-
-.question-form-box {
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.question-form-box input,
-.question-form-box textarea {
-  display: block;
-  width: 93%;
-  margin: 0.5em 0;
-  padding: 0.5em;
-}
-
-.question-form-box textarea {
-  height: 70px;
-}
-
-.question-form-box button {
-  display: block;
-  width: 100%;
-  margin-top: 1em;
-  padding: 0.3em 0.5em;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  color: #b119d9;
-  background-color: #f3cbea;
-  border: 1px dotted #b119d9;;
-  border-radius: 5px;
-}
-
-
-.question-form-box button:hover {
-cursor: pointer;
-animation-name: calling;
-animation-duration: 0.3s;
-color: #ffffff;
-background-color: #b119d9;
-}
-
-.popup-question-close {
-  position: absolute;
-  top: 0;
-  right: -30px;
-  display: block;
-  margin: 0;
-  padding: 0.2em 0.4em;
-  border-radius: 50%;
-  font-size: 1.2em;
-  background-color: #ffffff;
-}
-
-.popup-question-close:hover {
-  cursor: pointer;
-  color: #b119d9;
-}
-
-.popup-bell h5 {
-  margin: 0 0 0.5em 0;
-  font-size: 1.2em;
+  .main-catalog-order .offer-box-img img {
+    max-width: 50%;
+    height: auto;
+  }
 }
